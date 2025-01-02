@@ -1,0 +1,55 @@
+/* Safariのデフォルトの矢印を非表示にする */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.details {
+	margin-top: calc(10 * var(--vw));
+	overflow: clip;
+	cursor: pointer;
+}
+
+.details + .details {
+  margin-top: 30px;
+}
+
+.details[open] .summary::after {
+	scale: 1 -1;
+}
+
+.details[open] .details-content {
+	height: auto;
+}
+
+.summary {
+	display: grid;
+	padding: 10px;
+  border: 1px solid;
+	position: relative;
+	grid-template-columns: 1fr auto;
+}
+
+.summary::after {
+	content: "";
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+  translate: 0 -50%;
+	transition: scale 0.15s;
+	background: black;
+}
+
+.details-content {
+
+}
+
+.details-content-inner {
+	padding: 10px;
+}
+
+.details-content-txt {
+
+}

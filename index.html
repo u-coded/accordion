@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>アコーディオン</title>
+</head>
+
+<body>
+  <h1>アコーディオン</h1>
+  <p>details summaryを使用したアコーディオン</p>
+
+  <details class="details" data-details>
+    <summary class="summary" aria-controls="qa-1" aria-expanded="false">
+      質問テキスト
+    </summary>
+    <div id="qa-1" class="details-content" aria-hidden="true" data-details-content>
+      <div class="details-content-inner">
+        <p class="details-content-txt">回答テキスト回答テキスト</p>
+      </div>
+    </div>
+  </details>
+
+  <details class="details" data-details>
+    <summary class="summary" aria-controls="qa-2" aria-expanded="false">
+      質問テキスト
+    </summary>
+    <div id="qa-2" class="details-content" aria-hidden="true" data-details-content>
+      <div class="details-content-inner">
+        <p class="details-content-txt">回答テキスト回答テキスト</p>
+      </div>
+    </div>
+  </details>
+
+</body>
+
+</html>
