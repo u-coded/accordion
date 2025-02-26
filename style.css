@@ -4,40 +4,40 @@ summary::-webkit-details-marker {
 }
 
 .details {
-	margin-top: 30px;
-	overflow: clip;
-	cursor: pointer;
+  margin-top: 30px;
+  overflow: clip;
+  cursor: pointer;
 }
 
 .details[open] .summary::after {
-	scale: 1 -1;
+  scale: 1 -1;
 }
 
 .details[open] .details-content {
-	height: auto;
+  height: auto;
 }
 
 .summary {
-	display: grid;
-	padding: 10px;
+  display: grid;
+  padding: 10px;
   border: 1px solid;
-	position: relative;
-	grid-template-columns: 1fr auto;
+  position: relative;
+  grid-template-columns: 1fr auto;
 }
 
 .summary::after {
-	content: "";
-	clip-path: polygon(50% 100%, 0 0, 100% 0);
-	width: 10px;
-	height: 10px;
-	position: absolute;
-	top: 50%;
-	right: 10px;
+  content: "";
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
   translate: 0 -50%;
-	transition: scale 0.15s;
-	background: black;
+  transition: scale 0.15s;
+  background: black;
 }
 
 .details-content-inner {
-	padding: 10px;
+  padding: 10px;
 }
