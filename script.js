@@ -20,11 +20,7 @@ detailsElements.forEach((detail) => {
     e.preventDefault(); // デフォルトのクリック動作を防ぐ
 
     const isOpen = detail.hasAttribute("open"); // <details> が開いているかどうかを判定
-    const durationVal =
-      getComputedStyle(content).getPropertyValue("--duration"); // カスタムプロパティからアニメーションの継続時間を取得
-    const duration = durationVal
-      ? parseFloat(durationVal.replace("s", "")) * 1000 // 秒をミリ秒に変換
-      : 150; // デフォルトの継続時間は150ms
+    const duration = 150; // 継続時間
 
     if (!isOpen) {
       // <details> が閉じている場合

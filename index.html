@@ -6,31 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-  <title>アコーディオン</title>
+  <title>details summaryを使用したアコーディオン</title>
 </head>
 
 <body>
-  <h1>アコーディオン</h1>
-  <p>details summaryを使用したアコーディオン</p>
+  <h1>details summaryを使用したアコーディオン</h1>
 
   <details class="details" data-details>
-    <summary class="summary" aria-controls="qa-1" aria-expanded="false">
-      質問テキスト
+    <summary class="summary" aria-controls="panel-1" aria-expanded="false">
+      1つめのアコーディオン
     </summary>
-    <div id="qa-1" class="details-content" aria-hidden="true" data-details-content>
+    <div id="panel-1" class="details-content" aria-hidden="true" data-details-content>
       <div class="details-content-inner">
-        <p class="details-content-txt">回答テキスト回答テキスト</p>
+        <p class="details-content-txt">1つめのアコーディオンの中身</p>
       </div>
     </div>
   </details>
 
   <details class="details" data-details>
-    <summary class="summary" aria-controls="qa-2" aria-expanded="false">
-      質問テキスト
+    <summary class="summary" aria-controls="panel-2" aria-expanded="false">
+      2つめのアコーディオン
     </summary>
-    <div id="qa-2" class="details-content" aria-hidden="true" data-details-content>
+    <div id="panel-2" class="details-content" aria-hidden="true" data-details-content>
       <div class="details-content-inner">
-        <p class="details-content-txt">回答テキスト回答テキスト</p>
+        <p class="details-content-txt">2つめのアコーディオンの中身</p>
+      </div>
+    </div>
+  </details>
+
+  <details class="details" data-details>
+    <summary class="summary" aria-controls="panel-3" aria-expanded="false">
+      3つめのアコーディオン
+    </summary>
+    <div id="panel-3" class="details-content" aria-hidden="true" data-details-content>
+      <div class="details-content-inner">
+        <p class="details-content-txt">3つめのアコーディオンの中身</p>
       </div>
     </div>
   </details>

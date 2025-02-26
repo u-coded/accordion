@@ -4,13 +4,9 @@ summary::-webkit-details-marker {
 }
 
 .details {
-	margin-top: calc(10 * var(--vw));
+	margin-top: 30px;
 	overflow: clip;
 	cursor: pointer;
-}
-
-.details + .details {
-  margin-top: 30px;
 }
 
 .details[open] .summary::after {
@@ -42,14 +38,6 @@ summary::-webkit-details-marker {
 	background: black;
 }
 
-.details-content {
-
-}
-
 .details-content-inner {
 	padding: 10px;
-}
-
-.details-content-txt {
-
 }
